@@ -1,0 +1,505 @@
+/* ---------------------
+    Mobile Styles
+----------- ------------/
+
+/* ---Custom Styles---*/
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--white);
+}
+
+.wrapper{
+    width: 85%;
+    margin: auto;
+}
+
+:root{
+    --black: #212529;
+    --white: #F7F7F7;
+    --grey: #9B9D9E;
+    --border-radius: 10px;
+}
+
+/* Adding box-sizing: border-box fix border issues */
+*{
+    box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5{
+    color: var(--black);
+}
+
+p{
+    line-height: 2;
+}
+
+.logo-img{
+    max-width: 75%;
+    padding-left: 1em;
+}
+
+/* adding a margin-bottom to nav for better spacing  */
+nav{
+    margin-bottom: 3em;
+}
+
+/* adding a padding-left to nav lists and increasing font-size for better spacing  */
+li{
+    padding-left: 1em;
+    font-size: 18px;
+}
+
+/* Adding a background color to the the nav dropdowns to make it interactive when clicking */
+
+.dropdown-item:active{
+    background-color: var(--black);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* Adding in styles for footer icons to make it stand out on website */
+.footer-icons .icon{
+    border-radius: var(--border-radius);
+    box-sizing: border-box;
+    background-color: var(--grey);
+    padding: .8em;
+    margin: .1em
+}
+
+/* Adding hover on footer icons for better interaction */
+.footer-icons .icon:hover{
+   background-color: var(--black);
+   transition: 0.3s;
+}
+
+/* ---Home Page---- */
+
+.home-sect{
+    text-align: center;
+    margin-bottom: 5em;
+}
+
+.home-sect p{
+    margin-bottom: 1em;
+    font-size: 18px;
+}
+
+/* Adjusting size of home image for better spacing */
+.home-sect img{
+    max-width: 75%;
+    margin-bottom: 1em;
+}
+
+/* Adding a margin-bottom to rows to fix spacing with portfolio elements */
+.row{
+    margin-bottom: 1em;
+}
+
+/* ---Portfolio Section--- */
+
+/* Adding position relative to image container to have overlay on top of images */
+.img-container{
+    position: relative;
+  }
+  
+.image{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Adding in styles of overlay to create hover effect */
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .5s;
+    background-color: var(--black);
+  }
+  
+/* Bringing the opacity to 0.8 on hover to create effect */
+.img-container:hover .overlay {
+    opacity: 0.8;
+  }
+  
+/* Adding in styles for view text for hover effect to work */
+.view {
+    color: var(--white);
+    font-size: 26px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 1;
+    text-transform: uppercase;
+}
+
+/* Portfolio Section */
+.portfolio-sect h4{
+    margin-top: .5em;
+}
+
+/* Adding a padding-top of 3em for better spacing */
+.portfolio{
+    padding-top: 3em;
+}
+
+/* ---Portfolio Pages--- */
+
+/* Adding a margin-bottom to all portfolio elements for better spacing */
+.img{
+    margin-bottom: 2.5em;
+}
+
+/* ---About Me Page --- */
+
+/* About Me Section */
+
+/* Adding text-align center to center elements on mobile */
+.about-me{
+    text-align: center;
+}
+
+/* Adding padding and adjusting max-width to about me image for better legibility  */
+.about-img{
+    padding: 1em;
+    max-width: 85%;
+}
+
+/* Mission Statement Section  */
+
+/* Adding a background colour of white and padding of 2em to make section stand out more */
+.mission{
+    background-color: white;
+    padding: 2em;
+}
+
+/* Skills Section */
+
+/* Adding a margin-bottom to each skill bar for better spacing */
+.bar{
+    margin-bottom: .7em;
+}
+
+/* Giving each text a margin 0f 0 for better alignment */
+.bar p{
+    margin: 0;
+}
+
+.skills h2{
+    margin-top: .5em;
+}
+
+/* Work Experience Section */
+
+.work{
+    margin-top: 1em;
+}
+
+/* ---Contact Page--- */
+
+/* Adding in styles for input tags to match with mockup */
+input[type=text]{ 
+  width: 100%;
+  padding: .7em;
+  border: 0.25px solid var(--black);
+} 
+
+/* Adding padding-top to phone number form on mobile to push down for equal spacing */
+input[name=phone-number]{
+    margin-top: 1em;
+}
+
+/* Applying styles for message box to match with mockup*/
+textarea{
+  display: block;
+  margin: 16px 0;
+  width: 100%; 
+  resize: none;
+  height: 15rem;
+  padding: 1em;
+  border: solid 0.25px var(--black);
+}
+
+/* Adjusting font size and padding for submit button for better legibility */
+.btn{
+    padding: .5em 2.5em;
+    font-size: 18px;
+}
+
+/* Adding a hover to submit button for better user interaction */
+.btn:hover{
+    background-color: var(--grey);
+    transition: 0.3s;
+}
+
+/* -------------------
+    Tablet Styles 
+--------------------*/
+
+@media screen and (min-width: 576px) and (max-width: 992px){
+
+    /* ---Custom Styles--- */
+
+    /* Adjusting width of wrapper for better legibility */
+    .wrapper{
+        width: 90%;
+    }
+
+    /* ---Home Page--- */
+
+    /* Adjusting max-width of home image for better legibility */
+    .home img{
+        max-width: 50%;
+    }
+
+    /* Using grid to put elements in a 2 column grid */
+    .portfolio-sect{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1em;
+    }
+
+    .portfolio-sect img{
+        max-width: 100%;
+    }
+
+    /* ---About Me Page--- */
+
+    .about-img{
+        max-width: 40%;
+    }
+
+    /* Using grid to skill work section in a 2 column grid */
+    .skill-work{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1em;
+    }
+
+    /* Adjusting margins of both work sections for better legibility */
+
+    .work-1{
+        margin-top: 2em;
+    }
+    .work-2{
+        margin-top: 5em;
+    }
+
+    /* removing hr line to match with mockup */
+    hr{
+        display: none;
+    }
+
+    /* ---Graphic Design Page--- */
+
+    /* Adjusting max-width of Graphics portfolio for better legibility */
+    .gd-work{
+        max-width: 90%;
+        margin: auto;
+    }
+
+    /* Adjusting max-width of  */
+    .circle-img{
+        max-width: 80%; 
+    }
+
+      /* ---Contact Page--- */
+
+      input[name=phone-number]{
+        margin: 0;
+    } 
+
+      textarea{
+        height: 15rem;
+    }
+}
+
+/* Adding another tablet breakpoint to help fix sizing circle design on Graphic Design Page */
+
+@media screen and (min-width: 576px) and (max-width: 768px){
+    .circle-img{
+        max-width: 100%;
+    }
+}
+
+/* -------------------
+    Desktop Styles
+----------------------*/
+@media screen and (min-width: 992px){
+
+    /*--- Custom Styles--- */
+
+    .logo-img{
+        padding-left: 5.5em;
+        max-width: 85%;
+    }
+
+    /* Adjusting padding-right on nav lists and dropdowns for better legibility */
+    li{
+        padding-right: 4rem;
+    }
+
+    .dropdown-item{
+        padding-right: 0;
+    }
+
+    /*---Home Page--- */
+
+    /* Adding flexbox to home section for better alignment of elements */
+    .home{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    /* Changing order of image and text to match with mockup */
+    .home .home-img{
+        order: 1;
+    }
+
+    /* Adjusting font size for h1 and p for better legibility */
+    .home h1{
+        font-size: 68px;
+    }
+
+    .home p{
+        font-size: 24px;
+    }
+
+    .home img{
+        max-width: 600px;
+    }
+    
+    /* Portfolio Section */
+
+    /* Using grid to put portfolio in a 2 column grid */
+    .portfolio-sect{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2em;
+        max-width: 85%;
+        margin: auto;
+    }
+
+    .portfolio{
+        font-size: 20px;
+    }
+
+    /* ---About Me Page--- */
+
+    /* Decreasing max-width of About me image for better alignment */
+    .about-img{
+        max-width: 40%;
+    }
+
+    /* Mission Statement section */
+
+    /* Increasing padding on mission section to match with mockup */
+    .mission{
+        padding: 5em;
+    }
+    
+    .mission p{
+        padding-left: 11em;
+        padding-right: 11em;
+        line-height: 2.3;
+        font-size: 18px;
+    }
+
+    /* Putting skills and work section in 2-column grid to match with mockup */
+    .skill-work{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1em;
+    }
+
+    /* Adjusting margin-bottom to each skill bar for better spacing */
+    .bar{
+        margin-bottom: .5em;
+    }
+
+    /* Adjusting margins of both work sections for better legibility */
+    .work-1{
+        margin-top: 2em;
+    }
+
+    .work-2{
+        margin-top: 5em;
+    }
+
+    /* Removing hr line to match with mockup */
+    hr{
+        display: none;
+    }
+
+    /* ---Graphic Design Page--- */
+
+    /* Adjusting max-width of Graphic Design work to match with mockup */
+    .gd-work{
+        max-width: 94%;
+        margin: auto;
+    }
+
+    .circle-img{
+        max-width: 70%;  
+      }
+
+    /* ---Contact Page--- */
+
+    /* Adding a margin of 0 to phone number input to put it on the same line as the full name input */
+      input[name=phone-number]{
+        margin: 0;
+    }
+
+    /* Increasing height of message box to match with mockup */
+    textarea{
+        height: 18rem;
+    }
+}
+
+/* Adding a breakpoint of min-width of 1200px for elements that don't work at min-width of 992px  */
+
+@media screen and (min-width: 1200px){
+
+    /* ---About Me Page--- */
+
+    /* Adding flexbox to About Me section for better alignment on desktop */
+    .about-me{
+       display: flex;
+       justify-content: space-evenly;
+       padding: 3em 0;
+       align-items: center;
+       margin-bottom: 4em;
+    }
+
+    /* Adding a text-align left for better legibility */
+    .about-me{
+        text-align: left;
+    }
+
+    /* Adjusting size of about me body text for better legibility on desktop */
+    .about-me p{
+        width: 690px;
+        line-height: 2.5;
+        padding-left: .5rem;
+        font-size: 18px;
+    }
+
+    /* Adjusting max-width of about me image for better legibility */
+    .about-img{
+        max-width: 70%;
+    }
+}
