@@ -1,0 +1,240 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+/*===== VARIABLES CSS =====*/
+
+ :root{ 
+  /*===== Font weight =====*/
+  --header-height: 3rem;
+  --nav-width: 324px;
+  /*===== Colors =====*/
+
+  --blue: #132d46;
+  --orange: #f25f5c;
+  --white: #fbfbfb;
+  
+  /*===== Font Wetght and typography =====*/
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+
+  --body-font:'Poppins', sans-serif;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+
+  
+  /*===== Margenes =====*/
+  --mb-1: .5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  
+  /*===== z index =====*/
+
+  --z-fixed: 100;
+  
+ }
+
+ @media screen and (min-width:768px){
+  :root{
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
+ }
+
+/*===== BASE =====*/
+*,
+::before,
+::after{
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: var(--header-height) 0 0 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  background-color: var(--white);
+  color: var(--blue);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+p{
+  margin: 0;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: var(--orange);
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.logo{
+  max-width: 17% !important;
+}
+
+.logo-div{
+  text-align: right;
+}
+
+.fa-solid{
+  color: var(--white);
+}
+/*===== CLASS CSS ===== */
+
+.section{
+  padding: 4rem 0 2rem;
+}
+
+.section-title{
+  font-size: var(--h1-font-size);
+  color: var(--orange);
+  margin-bottom: var(--mb-3);
+  text-align: center;
+}
+
+.section-subtitle{
+  display: block;
+  font-size: var(--small-font-size);
+  color: var(--blue);
+  text-align: center;
+  font-weight: var(--font-bold);
+  margin-bottom: .25rem;
+}
+
+/*===== LAYOUT =====*/
+.bd-grid{
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: 100%;
+  column-gap: 2rem;
+  width: calc(100% - 2rem);
+  margin-left: var(--mb-2);
+  margin-right: var(--mb-2);
+}
+
+.l-header{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  /* background-color: var(--blue); */
+}
+
+/*===== NAV =====*/
+.nav{
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_menu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 100vh;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  background-color: var(--blue);
+  transition: .7s;
+}
+
+.nav_close{
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  color: var(--orange);
+  cursor: pointer;
+}
+
+.nav_item{
+  margin-bottom: var(--mb-4);
+}
+
+.nav_link{
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: var(--white);
+  font-weight: var(--font-bold);
+  transition: .3s;
+}
+
+.nav_link:hover{
+  color: var(--orange);
+}
+
+.nav_toggle{
+  
+}
+
+/* Continue from 16:02  
+   https://youtu.be/owEHlDn0JYQ */
+
+/*=== Show menu ===*/
+
+
+/*Active menu*/
+
+
+/*===== HOME =====*/
+
+
+/*BUTTONS*/
+
+
+/* ===== ABOUT =====*/
+
+
+/* ===== SKILLS =====*/
+
+
+/* ===== EDUCATION =====*/
+
+
+/* ===== SERVICES =====*/
+
+
+/* ===== PROJECT IN MIND  =====*/
+
+
+/* ===== WORKS =====*/
+
+
+/* ===== CONTACT =====*/
+
+
+/* ===== FOOTER =====*/
+
+
+/* ===== MEDIA QUERIES=====*/
