@@ -217,7 +217,7 @@ img{
 }
 
 .home_icons{
-  color: var(--blue);
+  color: var(--white);
 }
 
 /* Continue from 21:58  
@@ -260,6 +260,39 @@ img{
   margin-bottom: var(--mb-2);
 }
 
+.home_title{
+  font-size: var(--h1-font-size);
+  color: var(--blue);
+  font-weight: var(--font-bold);
+}
+
+.home_profession{
+  font-size: var(--small-font-size);
+  color: var(--orange);
+  margin-bottom: var(--mb-5);
+}
+
+.home_social{
+  margin-bottom: 4.5rem;
+}
+
+.home_social-link{
+  display: inline-flex;
+  background-color: rgb(239, 230, 230);
+  color: var(--blue);
+  font-size: 1.1rem;
+  border-radius: 50%;
+  padding: .40rem;
+  margin: 0 var(--mb-1);
+  transition: 0.4s;
+}
+
+.home_social-link:hover{
+  background-color: var(--blue);
+  color: var(--orange);
+}
+
+
 /* .home_img img{
   width: 155px;
 } */
@@ -271,6 +304,20 @@ img{
 
 /*BUTTONS*/
 
+.button{
+  display: inline-block;
+  background-color: var(--orange);
+  color: var(--white);
+  padding: 1rem 1.5rem;
+  font-weight: var(--font-semibold);
+  border-radius: .5rem;
+  transition: 0.4s;
+}
+
+.button:hover{
+  background-color: var(--blue);
+  color: var(--orange);
+}
 
 /* ===== ABOUT =====*/
 
