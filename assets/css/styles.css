@@ -185,7 +185,7 @@ img{
   top: 0;
   left: -100%;
   width: 70%;
-  height: 108vh;
+  height: 115vh;
   padding: 3rem;
   display: flex;
   align-items: center;
@@ -246,8 +246,6 @@ img{
   color: var(--white);
 }
 
-/* Continue from 21:58  
-   https://youtu.be/owEHlDn0JYQ */
 
 /*=== Show menu ===*/
 .show{
@@ -364,6 +362,45 @@ img{
 }
 
 /* ===== SKILLS =====*/
+.skills_conatiner{
+  row-gap: 2rem;
+}
+
+.skills_data{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 var(--mb-2);
+  margin-bottom: var(--mb-4);
+}
+
+.skills_bar{
+  position: absolute;
+  bottom: -.75rem;
+  height: .45rem;
+  border-radius: 12px;
+  background-color: var(--orange);
+}
+
+.skills_branding{
+  width: 88%;
+}
+
+.skills_web-dev{
+  width: 84%;
+}
+
+.skills_web-design{
+  width: 91%;
+}
+
+.skills_magazine{
+  width: 90%;
+}
+
+.skills_motion-graphics{
+  width: 90%;
+}
 
 
 /* ===== EDUCATION =====*/
