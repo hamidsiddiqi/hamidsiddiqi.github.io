@@ -354,6 +354,7 @@ img{
 
 .about_description{
   margin-bottom: var(--mb-4);
+  text-align: center;
 }
 
 .about_img{
@@ -387,7 +388,7 @@ img{
 }
 
 .skills_web-dev{
-  width: 84%;
+  width: 93%;
 }
 
 .skills_web-design{
@@ -395,7 +396,7 @@ img{
 }
 
 .skills_magazine{
-  width: 90%;
+  width: 92%;
 }
 
 .skills_motion-graphics{
@@ -469,6 +470,37 @@ img{
 
 /* ===== SERVICES =====*/
 
+.services_container{
+  row-gap: 2rem;
+}
+
+.services_content{
+  padding: 1.5rem .5rem;
+  /* border: 2px solid var(--orange); */
+  background-color: var(--blue);
+  border-radius: .5rem;
+  text-align: center;
+}
+
+
+.services_icon{
+  font-size: 2rem;
+  color: var(--orange);
+  padding: .5rem;
+  background-color: var(--white);
+  border-radius: 50%;
+  margin-bottom: var(--mb-2);
+}
+
+.services_title{
+  font-size: 1.25rem;
+  color:var(--orange);
+  margin-bottom: var(--mb-1);
+}
+
+.services_description{
+  color: var(--white);
+}
 
 /* ===== PROJECT IN MIND  =====*/
 
