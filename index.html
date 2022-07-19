@@ -294,7 +294,7 @@
                 <h2 class="section-title">Contact Me</h2>
 
                 <div class="contact_container bd-grid">
-                    <from>
+                    <form id="my_form">
                         <div class="contact_inputs" class="contact_form" >
                             <input type="text" id="fullName" placeholder="Full Name" class="contact_input name">
                             <input type="email" placeholder="Email" required class="contact_input email" id="from_email">
@@ -303,8 +303,8 @@
                        
                         <input type="text" placeholder="Project" id="subject" class="contact_input">
                         <textarea name="" id="message" cols="0" rows="10" placeholder="Message" class="contact_input msg"></textarea>
-                        <button onclick="sendEmail()" type="submit" value="Submit" class="button contact_button" >Submit</button>
-                    </from>
+                        <button onclick="sendEmail()" type="submit" value="Submit" class="button contact_button" id="btn" >Submit</button>
+                    </form>
 
                     <div>
                         <div class="contact_info">
