@@ -56,10 +56,18 @@ function sendEmail(){
     }
 
     emailjs.send('service_pv369uq', 'template_fk5fe9n', params).then(function(res){
-        alert('Your Form has succesfully been sent!' + res.status);
+        alert('Your form has succesfully been sent!');
         e.target.reset()
     }) 
 }
+
+// Form Reset
+const form = document.getElementById('my_form');
+
+form.addEventListener('submit', function handleSubmit(event) {
+  event.preventDefault();
+  form.reset();
+});
 
 
 
