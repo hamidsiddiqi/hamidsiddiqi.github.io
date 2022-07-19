@@ -13,6 +13,14 @@
         
         <link rel="shortcut icon" href="./assets/img/logo.png" type="image/tab" sizes="16x16">
 
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+        (function(){
+            emailjs.init("D5rKrJzfpT2dyxftl");
+        })();
+        </script>
         <title>Hamid Siddiqi</title>
     </head>
     <body>
@@ -286,16 +294,16 @@
                 <h2 class="section-title">Contact Me</h2>
 
                 <div class="contact_container bd-grid">
-                    <from action="https://formsubmit.co/hamidsiddiqi458@gmail.com" method="POST">
+                    <from>
                         <div class="contact_inputs" class="contact_form" >
-                            <input type="text" placeholder="Full Name" class="contact_input name">
-                            <input type="email" placeholder="Email" required class="contact_input email">
-                            <input type="hidden" name="_next" value="https://hamidsiddiqi.github.io/thanks.html">
+                            <input type="text" id="fullName" placeholder="Full Name" class="contact_input name">
+                            <input type="email" placeholder="Email" required class="contact_input email" id="email_id">
+                            <!-- <input type="hidden" name="_next" value="https://hamidsiddiqi.github.io/thanks.html"> -->
                         </div>
                        
-                        <input type="text" placeholder="Project" class="contact_input">
-                        <textarea name="" id="" cols="0" rows="10" placeholder="Message" class="contact_input msg"></textarea>
-                        <button type="submit" value="Submit" class="button contact_button">Submit</button>
+                        <input type="text" placeholder="Project" id="project_id" class="contact_input">
+                        <textarea name="" id="message" cols="0" rows="10" placeholder="Message" class="contact_input msg"></textarea>
+                        <button onclick="sendEmail()" type="submit" value="Submit" class="button contact_button" >Submit</button>
                     </from>
 
                     <div>
@@ -316,6 +324,9 @@
         
         <!--===== MAIN JS =====-->
 
+        <!-- <script src="./assets/js/contact.js"></script> -->
         <script src="./assets/js/main.js"></script>
     </body>
 </html>
+
+
