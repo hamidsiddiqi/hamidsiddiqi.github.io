@@ -70,4 +70,28 @@ form.addEventListener('submit', function handleSubmit(event) {
 });
 
 
+// Popup
+
+const magazinePopup = document.querySelector('.magazine_data')
+// const timsPopup = document.querySelector('.magazine_data')
+// const magazinePopup = document.querySelector('.magazine_data')
+// const magazinePopup = document.querySelector('.magazine_data')
+// const magazinePopup = document.querySelector('.magazine_data')
+// const magazinePopup = document.querySelector('.magazine_data')
+
+const popup_bg = document.querySelector('.popup_bg')
+
+magazinePopup.addEventListener('click', function(){
+    popup_bg.classList.add('bg_active')
+})
+
+
+// Close Popup
+
+const popupClose = document.getElementById('popupClose')
+
+popupClose.addEventListener('click', function(){
+    popup_bg.classList.remove('bg_active')
+})
+
 
