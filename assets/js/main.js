@@ -73,15 +73,16 @@ form.addEventListener('submit', function handleSubmit(event) {
 // Popup
 
 const magazinePopup = document.querySelector('.magazine_data')
-// const timsPopup = document.querySelector('.magazine_data')
-// const magazinePopup = document.querySelector('.magazine_data')
-// const magazinePopup = document.querySelector('.magazine_data')
-// const magazinePopup = document.querySelector('.magazine_data')
-// const magazinePopup = document.querySelector('.magazine_data')
 
 const popup_bg = document.querySelector('.popup_bg')
 
 magazinePopup.addEventListener('click', function(){
+    popup_bg.classList.add('bg_active')
+})
+
+const magazineImage = document.querySelector('.magazine_img_data')
+
+magazineImage.addEventListener('click', function(){
     popup_bg.classList.add('bg_active')
 })
 
