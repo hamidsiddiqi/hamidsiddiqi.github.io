@@ -645,17 +645,72 @@ img{
 }
 
 .close_popup{
-  transition: 0.3s;
+  transition: 0.5s;
   text-align: right;
   margin-bottom: .5rem;
 }
 
 
 /* ===== FOOTER =====*/
+.footer{
+  background-color: var(--orange);
+  color: var(--white);
+  text-align: center;
+}
 
+.footer_img{
+  max-width: 15%;
+  margin-bottom: var(--mb-2);
+  border-radius: .5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* ===== MEDIA QUERIES=====*/
+@media screen and (min-width: 768px) {
+  .nav_menu{
+    width: var(--nav-width);
+  }
 
+  .about_container{
+    grid-template-columns: repeat(2, 1fr);
+    gap: .7rem;
+    margin-bottom: 5rem;
+  }
+
+  .about_container h2{
+    font-size: var(--h2-font-size);
+  }
+
+  .about_img{
+    max-width: 60%;
+  }
+
+  .about_description{
+    text-align: left;
+    padding-left: 2em;
+  }
+
+  .education-job{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+  }
+
+  .education-job h2{
+    font-size: var(--h2-font-size);
+  }
+
+ .education_year{
+  font-size: 16px;
+ }
+
+  .works_container,
+  .services_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 /* =====POPUP===== */
 
