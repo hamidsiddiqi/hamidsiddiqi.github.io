@@ -710,6 +710,10 @@ img{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+ 
+ .footer_img{
+    max-width: 9%;
+  }
 }
 
 /* =====POPUP===== */
