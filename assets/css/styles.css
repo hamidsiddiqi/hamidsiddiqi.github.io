@@ -714,6 +714,10 @@ img{
  .footer_img{
     max-width: 9%;
   }
+ 
+  .popup_modal{
+    width: 65%;
+  }
 }
 
 /* =====POPUP===== */
