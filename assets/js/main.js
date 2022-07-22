@@ -70,29 +70,51 @@ form.addEventListener('submit', function handleSubmit(event) {
 });
 
 
-// Popup
+// Popup Magazine Piece 1
 
+const popup_bg_1 = document.querySelector('.popup_bg_1')
 const magazinePopup = document.querySelector('.magazine_data')
 
-const popup_bg = document.querySelector('.popup_bg')
 
 magazinePopup.addEventListener('click', function(){
-    popup_bg.classList.add('bg_active')
+    popup_bg_1.classList.add('bg_active')
 })
 
 const magazineImage = document.querySelector('.magazine_img_data')
 
 magazineImage.addEventListener('click', function(){
-    popup_bg.classList.add('bg_active')
+    popup_bg_1.classList.add('bg_active')
 })
+
+// Popup Tims Piece 2
+const popup_bg_2 = document.querySelector('.popup_bg_2')
+const timsPopup = document.querySelector('.tims_data')
+
+
+timsPopup.addEventListener('click', function(){
+    popup_bg_2.classList.add('bg_active')
+})
+
+const timsImage = document.querySelector('.tims_img_data')
+
+timsImage.addEventListener('click', function(){
+    popup_bg_2.classList.add('bg_active')
+})
+
+
 
 
 // Close Popup
 
-const popupClose = document.getElementById('popupClose')
+const popupCloseOne = document.getElementById('popupClose_1')
 
-popupClose.addEventListener('click', function(){
-    popup_bg.classList.remove('bg_active')
+popupCloseOne.addEventListener('click', function(){
+    popup_bg_1.classList.remove('bg_active')
+})
+
+const popupCloseTwo = document.getElementById('popupClose_2')
+popupCloseTwo.addEventListener('click', function(){
+    popup_bg_2.classList.remove('bg_active')
 })
 
 
