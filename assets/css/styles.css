@@ -563,6 +563,7 @@ img{
 /* ===== CONTACT =====*/
 .contact_container{
   row-gap: 3rem;
+  margin-bottom: 3rem;
 }
 
 .contact_input{
@@ -605,7 +606,10 @@ img{
   padding-left: 1rem;
 }
 
-.popup_bg{
+/* POPUP */
+
+.popup_bg_1,
+.popup_bg_2{
   position: fixed;
   top: 0;
   left: 0;
