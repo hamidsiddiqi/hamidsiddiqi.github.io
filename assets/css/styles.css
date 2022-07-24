@@ -705,7 +705,7 @@ img{
 }
 
 /* ===== MEDIA QUERIES=====*/
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 668px) {
   .nav_menu{
     width: var(--nav-width);
   }
