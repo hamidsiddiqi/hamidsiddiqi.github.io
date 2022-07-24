@@ -744,8 +744,9 @@ img{
  }
 
  .works_img img{
-  height: 400px;
+  height: 260px;
   object-fit: cover;
+  object-position: center center;
  }
 
 
@@ -797,6 +798,7 @@ img{
   .works_img img{
     height: 215px;
     object-fit: cover;
+    object-position: center center;
    }
 
 
