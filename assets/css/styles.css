@@ -828,6 +828,21 @@ img{
   }
 }
 
+@media screen and (min-width: 1600px){
+  .about_description{
+    padding-left: 16em;
+    line-height: 2.3;
+  }
+
+  .about_img{
+    max-width: 45%;
+  }
+
+  .about_container{
+    gap: 0;
+  }
+
+}
 
 
 /* =====POPUP===== */
