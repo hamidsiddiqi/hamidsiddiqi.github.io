@@ -747,6 +747,7 @@ img{
   height: 260px;
   object-fit: cover;
   object-position: center center;
+  width: 300px;
  }
 
 
@@ -762,7 +763,7 @@ img{
   }
 
   .popup_modal{
-    width: 55%;
+    width: 50%;
   }
 }
 
@@ -797,6 +798,7 @@ img{
 
   .works_img img{
     height: 215px;
+    width: 250px;
     object-fit: cover;
     object-position: center center;
    }
@@ -833,6 +835,11 @@ img{
     padding-left: 16em;
     line-height: 2.3;
   }
+
+  .works_img img{
+    width: 400px;
+  }
+
 
   .about_img{
     max-width: 45%;
