@@ -101,7 +101,7 @@ timsImage.addEventListener('click', function(){
     popup_bg_2.classList.add('bg_active')
 })
 
-// Popup Cycle Piece 2
+// Popup Cycle Piece 3
 const popup_bg_3 = document.querySelector('.popup_bg_3')
 const cyclePopup = document.querySelector('.cycle_data')
 
@@ -114,6 +114,51 @@ const cycleImage = document.querySelector('.cycle_img_data')
 
 cycleImage.addEventListener('click', function(){
     popup_bg_3.classList.add('bg_active')
+})
+
+// Owl Avator 4
+const popup_bg_4 = document.querySelector('.popup_bg_4')
+const owlPopup = document.querySelector('.owl_data')
+
+
+owlPopup.addEventListener('click', function(){
+    popup_bg_4.classList.add('bg_active')
+})
+
+const owlImage = document.querySelector('.owl_img_data')
+
+owlImage.addEventListener('click', function(){
+    popup_bg_4.classList.add('bg_active')
+})
+
+// BMO 5
+const popup_bg_5 = document.querySelector('.popup_bg_5')
+const bmoPopup = document.querySelector('.bmo_data')
+
+
+bmoPopup.addEventListener('click', function(){
+    popup_bg_5.classList.add('bg_active')
+})
+
+const bmoImage = document.querySelector('.bmo_img_data')
+
+bmoImage.addEventListener('click', function(){
+    popup_bg_5.classList.add('bg_active')
+})
+
+// ARC 6
+const popup_bg_6 = document.querySelector('.popup_bg_6')
+const arcPopup = document.querySelector('.arc_data')
+
+
+arcPopup.addEventListener('click', function(){
+    popup_bg_6.classList.add('bg_active')
+})
+
+const arcImage = document.querySelector('.arc_img_data')
+
+arcImage.addEventListener('click', function(){
+    popup_bg_6.classList.add('bg_active')
 })
 
 
@@ -136,6 +181,21 @@ popupCloseTwo.addEventListener('click', function(){
 const popupCloseThree = document.getElementById('popupClose_3')
 popupCloseThree.addEventListener('click', function(){
     popup_bg_3.classList.remove('bg_active')
+})
+
+const popupCloseFour = document.getElementById('popupClose_4')
+popupCloseFour.addEventListener('click', function(){
+    popup_bg_4.classList.remove('bg_active')
+})
+
+const popupCloseFive = document.getElementById('popupClose_5')
+popupCloseFive.addEventListener('click', function(){
+    popup_bg_5.classList.remove('bg_active')
+})
+
+const popupCloseSix = document.getElementById('popupClose_6')
+popupCloseSix.addEventListener('click', function(){
+    popup_bg_6.classList.remove('bg_active')
 })
 
 
