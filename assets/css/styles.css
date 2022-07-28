@@ -755,6 +755,10 @@ img{
     gap: 1em;
   }
 
+  .modal_content p{
+    font-size: var(--small-font-size);
+  }
+
   .education-job h2{
     font-size: var(--h2-font-size);
   }
