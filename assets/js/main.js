@@ -101,6 +101,22 @@ timsImage.addEventListener('click', function(){
     popup_bg_2.classList.add('bg_active')
 })
 
+// Popup Cycle Piece 2
+const popup_bg_3 = document.querySelector('.popup_bg_3')
+const cyclePopup = document.querySelector('.cycle_data')
+
+
+cyclePopup.addEventListener('click', function(){
+    popup_bg_3.classList.add('bg_active')
+})
+
+const cycleImage = document.querySelector('.cycle_img_data')
+
+cycleImage.addEventListener('click', function(){
+    popup_bg_3.classList.add('bg_active')
+})
+
+
 
 
 
@@ -115,6 +131,11 @@ popupCloseOne.addEventListener('click', function(){
 const popupCloseTwo = document.getElementById('popupClose_2')
 popupCloseTwo.addEventListener('click', function(){
     popup_bg_2.classList.remove('bg_active')
+})
+
+const popupCloseThree = document.getElementById('popupClose_3')
+popupCloseThree.addEventListener('click', function(){
+    popup_bg_3.classList.remove('bg_active')
 })
 
 
