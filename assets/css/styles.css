@@ -624,7 +624,10 @@ img{
 
 .popup_bg_1,
 .popup_bg_2,
-.popup_bg_3{
+.popup_bg_3,
+.popup_bg_4,
+.popup_bg_5,
+.popup_bg_6{
   position: fixed;
   top: 0;
   left: 0;
@@ -682,6 +685,14 @@ img{
   color: #132d46;
   margin-right: auto;
 }
+
+.popup_bg_4 img{
+  max-width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 
 .close_popup{
   transition: 0.5s;
@@ -771,6 +782,12 @@ img{
 
   .popup_bg_2 img{
     max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .popup_bg_5 img{
+    max-width: 89%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -865,6 +882,11 @@ img{
     object-position: bottom bottom;
    }
 
+   .popup_bg_4 img{
+    max-width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 
   .about_img{
