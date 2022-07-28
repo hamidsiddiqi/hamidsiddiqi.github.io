@@ -357,6 +357,7 @@ img{
 .about_description{
   margin-bottom: var(--mb-4);
   text-align: center;
+  line-height: 1.8;
 }
 
 .about_img{
@@ -738,7 +739,8 @@ img{
 
   .about_description{
     text-align: left;
-    padding-left: 2em;
+    padding-left: 2.78em;
+    line-height: 1.8;
   }
 
   .education-job{
