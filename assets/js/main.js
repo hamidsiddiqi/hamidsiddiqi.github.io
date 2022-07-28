@@ -162,9 +162,6 @@ arcImage.addEventListener('click', function(){
 })
 
 
-
-
-
 // Close Popup
 
 const popupCloseOne = document.getElementById('popupClose_1')
@@ -197,5 +194,3 @@ const popupCloseSix = document.getElementById('popupClose_6')
 popupCloseSix.addEventListener('click', function(){
     popup_bg_6.classList.remove('bg_active')
 })
-
-
