@@ -18,12 +18,12 @@
   --font-bold: 700;
   
   --body-font:'Poppins', sans-serif;
-  --h1-font-size: 1.5rem;
-  --h2-font-size: 1.25rem;
-  --h3-font-size: 1rem;
+  --h1-font-size: 2rem;
+  --h2-font-size: 1.65rem;
+  --h3-font-size: 1.3rem;
   --normal-font-size: .938rem;
   --small-font-size: .813rem;
-  --smaller-font-size: .75rem;
+  --smaller-font-size: .775rem;
   
   
   /*===== Margenes =====*/
@@ -43,12 +43,12 @@
 
 @media screen and (min-width:768px){
   :root{
-    --h1-font-size: 2.25rem;
-    --h2-font-size: 1.5rem;
-    --h3-font-size: 1.25rem;
-    --normal-font-size: 1rem;
-    --small-font-size: .875rem;
-    --smaller-font-size: .813rem;
+    --h1-font-size: 2.65rem;
+    --h2-font-size: 2rem;
+    --h3-font-size: 1.7rem;
+    --normal-font-size: 1.2rem;
+    --small-font-size: 1rem;
+    --smaller-font-size: .875rem;
   }
 }
 
@@ -207,7 +207,7 @@ img{
 }
 
 .nav_link{
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
   color: var(--white);
   font-weight: var(--font-bold);
@@ -261,8 +261,8 @@ img{
 
 .home_container{
   /* height: calc(100vh - var(--header-height)); */
-  margin-bottom: 4rem;
-  margin-top: 10rem;
+  margin-bottom: 10rem;
+  margin-top: 8rem;
   align-items: center;
 }
 
@@ -346,6 +346,12 @@ img{
 }
 
 /* ===== ABOUT =====*/
+
+.education-job,
+.services,
+.works{
+  margin-bottom: 10rem;
+}
 .about_container{
   row-gap: 2rem;
 }
@@ -424,7 +430,7 @@ img{
 
 .education_year,
 .education_race{
-  font-size: var(--h3-font-size);
+  font-size: var(--small-font-size);
   margin-bottom: .25rem;
 }
 
@@ -453,9 +459,9 @@ img{
   border-radius: 50%;
 }
 
-.education_race{
+/* .education_race{
   font-size: 0.85rem;
-}
+} */
 
 .education_rounder::before{
   content: '';
@@ -491,7 +497,7 @@ img{
 
 
 .services_icon{
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: var(--orange);
   padding: .5rem;
   background-color: var(--white);
@@ -500,7 +506,7 @@ img{
 }
 
 .services_title{
-  font-size: 1.25rem;
+  font-size: var(--h3-font-size);
   color:var(--orange);
   margin-bottom: var(--mb-1);
 }
@@ -839,6 +845,12 @@ img{
     object-position: left left;
    }
 
+  .education-job,
+  .services,
+  .works{
+  margin-bottom: 10rem;
+}
+
    .popup_bg_3 img{
     max-width: 70%;
     margin-left: auto;
@@ -874,7 +886,7 @@ img{
 @media screen and (min-width: 1625px){
   .about_description{
     padding-left: 16em;
-    line-height: 2.3;
+    line-height: 2;
   }
 
   .works_img img{
