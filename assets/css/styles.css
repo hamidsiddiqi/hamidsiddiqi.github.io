@@ -825,6 +825,12 @@ img{
     left: 0;
   }
 
+  .home_img{
+    width: 175px;
+    height: 175px;
+    margin-bottom: var(--mb-4);
+  }
+
   .section{
     padding: 3rem 0 2rem;
   }
