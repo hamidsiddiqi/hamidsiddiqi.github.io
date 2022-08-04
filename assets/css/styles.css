@@ -897,11 +897,24 @@ img{
   }
 }
 
+@media screen and (min-width: 1500px){
+
+  .services_content{
+    padding: 3em;
+    width: 80%;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media screen and (min-width: 1625px){
   .about_description{
     padding-left: 16em;
     line-height: 2;
   }
+
+
 
   .works_img img{
     height: 305px;
